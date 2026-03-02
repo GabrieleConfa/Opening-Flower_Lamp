@@ -1,6 +1,6 @@
-# Mechatronic Floral Lamp
+# Floral Lamp
 
-A personal mechatronics project consisting of a 5-DOF lamp with synchronized servo actuation and dynamically eased PWM lighting. The system utilizes kinematic control and a non-blocking software architecture to manage hardware concurrency.
+A personal project consisting of a 5-DOF lamp with synchronized servo actuation and dynamically eased PWM lighting. The system utilizes kinematic control and a non-blocking software architecture to manage hardware concurrency.
 
 ## System Architecture and Control Strategy
 
@@ -25,8 +25,8 @@ The 12 WS2812B NeoPixels are synchronized directly with the kinematic progress o
 
 * Microcontroller: Arduino Uno / Nano (or compatible architecture)
 * Actuators: 5x SG90 Micro Servos
-* Lighting: 12x WS2812B NeoPixel LEDs
-* Input: 1x Pushbutton (Active Low, utilizing internal pull-up resistor)
+* Lighting: WS2812B NeoPixel circular LEDs
+* Input: 1x Pushbutton
 * Power: 5V External Power Supply (Required to support the current draw of the actuators and LEDs)
 
 ### Pin Configuration
@@ -35,8 +35,3 @@ The 12 WS2812B NeoPixels are synchronized directly with the kinematic progress o
 * Servos 1-5: D3, D4, D5, D6, D7
 * NeoPixel Data: D8
 
-## Repository Structure
-
-* /src - Contains the main.ino C++ control software.
-* /cad - Contains the Fusion 360 (CADflower.f3d) workspace for the 3D-printed mechanical components.
-* /Pic - Cpntains images of the Lamp in different states.
